@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+  <div class="container">
+  <div class="row pt-5 text-center ">
+    <div class="display-4 font-important" id="loaiHinhThi">{{translation[0].loaiHinhTitle}}
+      <hr>
+    </div>
+  </div>
+
+  <div class="row  pt-0 mt-5">
+      <div class="row">
+        <div id="carouselExampleControls" class="carousel slide m-auto  w-100 h-100" data-bs-ride="carousel">
+          <div class="carousel-inner">
+    
+            <div class="carousel-item active">
+              <div class="row w-100 h-100 d-flex justify-content-center m-auto d-block ">
+                <div class="card  border-0 d-flex flex-xxl-row" style="width: 90%;">
+                  <img src="images/slide1.png" class="card-img ps-5  mx-sm-auto d-sm-block img-slide">                       
+                  <div class="card-body p-5 borer-0 card-text-slide">
+                    <h5 class="card-title display-5 pb-3 "
+                      style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;font-weight: 300;">{{translation[0].loaiHinhSlide1}}</h5>
+                    <h6 class="card-subtitle mb-3 text-muted ">{{translation[0].subSlideTitle}} 1</h6>
+                    <p class="card-text ">
+                      {{translation[0].subloaiHinhSlide1}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="carousel-item ">
+              <div class="row w-100 h-100 d-flex justify-content-center m-auto d-block ">
+                <div class="card borer-0 d-flex flex-xxl-row border-0" style="width: 90%;">
+                  <img src="images/slide2.png" class="card-img ps-5  mx-sm-auto d-sm-block img-slide">
+                  <div class="card-body  p-5 borer-0 card-text-slide">
+                    <h5 class="card-title display-5 pb-3 "
+                      style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;font-weight: 300;">{{translation[0].loaiHinhSlide2}}</h5>
+                    <h6 class="card-subtitle mb-3 text-muted ">{{translation[0].subSlideTitle}} 2</h6>
+                    <p class="card-text   ">
+                      {{translation[0].subloaiHinhSlide2}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="carousel-item ">
+              <div class="row w-100 h-100 d-flex justify-content-center m-auto d-block borer-0">
+                <div class="card borer-0 d-flex flex-xxl-row border-0" style="width: 90%;">
+                  <img src="images/Lovepik_com-611161657-Children who study hard, free of charge.png" 
+                  class="card-img ps-5  mx-sm-auto d-sm-block img-slide">
+                  <div class="card-body p-5 borer-0 card-text-slide">
+                    <h5 class="card-title display-5 pb-3 "
+                      style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;font-weight: 300;">{{translation[0].loaiHinhSlide3}}</h5>
+                    <h6 class="card-subtitle mb-3 text-muted ">{{translation[0].subSlideTitle}} 3</h6>
+                    <p class="card-text ">
+                      {{translation[0].subloaiHinhSlide3}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-primary rounded" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next position-absolute " type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-primary rounded" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

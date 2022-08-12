@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+<body ng-class="myCssVar">
+    <div class="row pt-5 text-center pb-5 bg-white" id="About" ng-class="myCssVar">
+        <div class="display-4 font-important text-dark" id="loaiHinhThi">{{translation[0].aboutTitle}}
+          <hr>
+        </div>
+      </div>
+      <div class="container-fluid " ng-class="myCssVar">
+        <div class="container">
+          <!-- Row Giới thiệu Start -->
+          <div class="row pt-4 d-flex flex-sm-column flex-xxl-row" style="height: auto ;font-style: italic;">
+            <!-- Start col Chúng tôi làm gì -->
+            <div class="col px-5 pb-sm-4">
+              <ul class="list-unstyled text-dark d-grid gap-1">
+                <li>
+                  <div class="display-6 mb-2 text-dark font-important fw-bold text-center"
+                    style="font-size: 30px;font-weight: 400; font-style:normal;">{{translation[0].aboutQuestion1}}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                      class="bi bi-question-lg mb-1 text-dark" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z" />
+                    </svg>
+                  </div>
+                </li>
+                <li style="opacity: 90%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                    class="bi bi-asterisk me-3 mb-1 text-muted" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                  </svg>
+                  {{translation[0].textLeft.line1}}
+                </li>
+                <li style="opacity: 90%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                    class="bi bi-asterisk me-3 mb-1 text-muted" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                  </svg>
+                  {{translation[0].textLeft.line2}}
+                </li>
+                <li style="opacity: 90%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                    class="bi bi-asterisk me-3 mb-1 text-muted" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                  </svg>
+                  {{translation[0].textLeft.line3}}
+                </li style="opacity: 90%;">
+                <li style="opacity: 90%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                    class="bi bi-asterisk me-3 mb-1 text-muted" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                  </svg>
+                  {{translation[0].textLeft.line4}}
+                  <ul class="ms-4">
+                    <li>{{translation[0].textLeft.line5}}</li>
+                    <li>{{translation[0].textLeft.line6}}</li>
+                    <li>{{translation[0].textLeft.line7}}</li>
+                  </ul>
+                </li>
+                <li style="opacity: 90%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                    class="bi bi-asterisk me-3 mb-1 text-muted" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                  </svg>
+                  {{translation[0].textLeft.line8}}
+                </li>
+              </ul>
+    
+            </div>
+            <!-- End col Chúng tôi làm gì -->
+            <div class="col border-1 px-5 " style="padding-left: 20px;">
+              <div class="display-6 mb-3 text-dark font-important fw-bold text-center"
+                style="font-size: 30px;font-weight: 400;font-style:normal;">{{translation[0].aboutQuestion2}} 
+              </div>
+              <div class="row">
+                <div class="col-8">
+                  <div class="text-dark d-inline" style="line-height: 30px;opacity: 90%;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{translation[0].aboutSubQuestion2}}
+                  </div>
+                  <button type="button" class="btn  border-0 text-dark d-inline fw-bold" data-bs-toggle="collapse"
+                    data-bs-target="#xemthem">{{translation[0].btnMore}}</button>
+                </div>
+                <div class="col-4">
+                  <img src="images/toannha.jpg" class="mt-1" height="200px" width="200px" alt="">
+                </div>
+              </div>
+    
+    
+            </div>
+          </div>
+          <!-- Row Giới thiệu End -->
+    
+          <div class="row">
+            <div id="xemthem" class="collapse text-dark" style="line-height: 30px;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{translation[0].aboutTextExtra}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid " style="background-color: white;height: auto;" ng-include="'/html/loaihinhthi.html'" ng-class="myCssVar"></div>
+      <div class="container-fluid" ng-include="'html/cacgoi.html'" ng-class="myCssVar"> </div>
+
+</body>
+
+</html>

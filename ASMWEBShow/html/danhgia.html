@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="icon" href="/images/iconWeb.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+    </style>
+</head>
+<style>
+
+</style>
+
+<body>
+    <ul class="nav nav-pills bg-white">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="pill" href="#home"> Góp ý</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#menu1">Hỏi đáp</a>
+        </li>
+
+    </ul>
+    <style>
+
+    </style>
+    <!-- Tab panes -->
+    <div class="tab-content bg-white p-3 rounded" style="height: 800px;width: 1320px;border: 1px solid gray;">
+        <div class="tab-pane container active h-100 rounded" id="home">
+            <div class="row  h-100 w-100 rounded">
+                <div class="col-8 pe-3" style="border-right: 1px solid rgb(204, 203, 203);">
+                    <div class="row pb-3" style="border-bottom: 1px solid rgb(204, 203, 203);">
+                        <div class="col-6">
+                            <img src="images/sentleter.jpg" alt="" width="120%" class="d-block mt-5 pt-5"
+                                style="margin-left: -50px;">
+                        </div>
+                        <div class="col">
+                            <div class="row font-important display-6  py-4"
+                                style="text-align: center;margin-left: 35%;">Góp ý</div>
+                            <div class="row mb-3">
+                                <label for="">
+                                    <i class="bi bi-envelope me-4" style="font-size: 30px;"></i>
+                                    <input type="text" placeholder=" Email" class="bg-light ps-4"
+                                        style="border-radius: 27px; outline: none ;border: none;width: 330px;height: 40px;background-color: rgb(245, 245, 245);">
+                                </label>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="">
+                                    <i class="bi bi-calendar  me-4 " style="font-size: 30px;"></i>
+                                    <input type="text" placeholder=" Tổng quan" class="bg-light ps-4 "
+                                        style="border-radius: 27px; outline: none ;border: none;width: 330px;height: 40px;background-color: rgb(245, 245, 245);">
+                                </label>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="">
+                                    <div class="text-muted mt-3 mb-3 h6">Mô tả chi tiết :</div>
+                                    <textarea name="" id="" cols="30" rows="7" class="form-control bg-light"></textarea>
+                                </label>
+                            </div>
+
+                            <button class="btn btn-primary mt-4 mb-1" type="button"
+                                style="width: 130px;margin-left: 100px;border-radius: 25px;"
+                                onclick="openXacnhanmk()">Góp ý</button>
+                        </div>
+                    </div>
+                    <style>
+                        .checkedd {
+                            color: #FFA900;
+                        }
+
+                        .card-text>.fa-star {
+                            margin-top: 15px;
+                            font-size: 30px;
+                            margin-left: 15px;
+                        }
+                    </style>
+                    <div class="row   mt-2" style="height: auto">
+                        <div class="col-4">
+                            <div class="card" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title h3 font-important pb-4 text-muted">Đánh giá từ khách hàng</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">34 đánh giá</h6>
+                                    <p class="card-text">
+                                        <span class="fa fa-star checkedd"></span>
+                                        <span class="fa fa-star checkedd"></span>
+                                        <span class="fa fa-star checkedd"></span>
+                                        <span class="fa fa-star checkedd"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-8 ">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body">
+                                    <div class="card-text d-flex flex-column justify-content-around"
+                                        style="height: 170px;">
+                                        <div class="d-flex">
+                                            <span class="fw-bold " style="font-size: 20px;margin-top: -5px;">5</span>
+                                            <span class="fa fa-star ps-2 pe-3 text-muted"
+                                                style="font-size: 20px;"></span>
+                                            <div class="progress ms-2"
+                                                style="height: 15px;border-radius: 20px;width: 400px;">
+                                                <div class="progress-bar bg-success"
+                                                    style="width:80%; height: 15px;border-radius: 10px;"></div>
+                                            </div>
+                                            <span class="ps-4" style="font-size: 19px;margin-top: -7px;"> 9</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="fw-bold  pb-0"
+                                                style="font-size: 20px;;margin-top: -5px;">4</span>
+                                            <span class="fa fa-star ps-2 pe-3 text-muted"
+                                                style="font-size: 20px;"></span>
+                                            <div class="progress ms-2"
+                                                style="height: 15px;border-radius: 20px;width: 400px;">
+                                                <div class="progress-bar bg-primary"
+                                                    style="width:60%; height: 15px;border-radius: 10px;"></div>
+                                            </div>
+                                            <span class="ps-4 " style="font-size: 19px;margin-top: -7px;"> 8</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="fw-bold  pb-0"
+                                                style="font-size: 20px;;margin-top: -5px;">3</span>
+                                            <span class="fa fa-star ps-2 pe-3 text-muted"
+                                                style="font-size: 20px;"></span>
+                                            <div class="progress ms-2"
+                                                style="height: 15px;border-radius: 20px;width: 400px;">
+                                                <div class="progress-bar bg-info"
+                                                    style="width:40%; height: 15px;border-radius: 10px;"></div>
+                                            </div>
+                                            <span class="ps-4" style="font-size: 19px ;margin-top: -7px;"> 6</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="fw-bold  pb-0"
+                                                style="font-size: 20px;;margin-top: -5px;">2</span>
+                                            <span class="fa fa-star ps-2 pe-3 text-muted"
+                                                style="font-size: 20px;"></span>
+                                            <div class="progress ms-2"
+                                                style="height: 15px;border-radius: 20px;width: 400px;">
+                                                <div class="progress-bar bg-warning"
+                                                    style="width:20%; height: 15px;border-radius: 10px;"></div>
+                                            </div>
+                                            <span class="ps-4 " style="font-size: 19px;margin-top: -7px;"> 3</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="fw-bold  pb-2"
+                                                style="font-size: 20px;;margin-top: -5px;">1</span>
+                                            <span class="fa fa-star ps-2 pe-3 text-muted"
+                                                style="font-size: 20px;"></span>
+                                            <div class="progress ms-2"
+                                                style="height: 15px;border-radius: 20px;width: 400px;">
+                                                <div class="progress-bar bg-danger"
+                                                    style="width:10%; height: 15px;border-radius: 10px;"></div>
+                                            </div>
+                                            <span class="ps-4 " style="font-size: 19px;margin-top: -7px;"> 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col-4 ">
+                    <div class="row mb-4">
+                        <div class="card ms-3 border-0" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted" style="font-size: 30px;font-weight: 00;" >Nhận xét của khách hàng</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">13 nhận xét</h6>
+                                <p class="card-text">Chúng tôi sẽ luôn ghi nhận và khắc phục để sản phẩm được hoàn thiện
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="card ms-3 border-0" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title pb-2" style="border-bottom: 1px gray dotted;">
+                                    <span>Trương Nhựt Thiên <span class="text-muted ps-3" style="font-size: 13px;">2 ngày trước</span></span>
+                                    
+                                </h5>
+
+                                <h5 class="card-title mb-2">
+                                    <span class="fa fa-star checkedd"></span>
+                                    <span class="fa fa-star checkedd"></span>
+                                    <span class="fa fa-star checkedd"></span>
+                                    <span class="fa fa-star checkedd"></span>
+                                    <span class="fa fa-star checkedd" ></span>
+                                    <span style="font-size: 18px;">Cực kì hài lòng</span>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted pb-2">
+                                    <i class="bi bi-check-circle-fill text-success "
+                                        style="font-style: normal;font-size: 14px;"><span class="ms-1">Sử dụng gói Cao
+                                            cấp</span></i>
+                                </h6>
+                                <p class="card-text">Giao hàng nhanh. Sách có bọc nilong bên ngoài. Nội dung sách phân
+                                    tích về sự khác biệt trong cách lập luận và nhận xét vấn đề của hai giới trong một
+                                    mối quan hệ. Có những câu chuyện tưởng chừng như không lớn nhưng cũng đủ để làm rạn
+                                    nứt tình cảm giữa đôi bên</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="card ms-3 border-0" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title pb-2" style="border-bottom: 1px gray dotted;">
+                                    <span>Trương Anh Thọ <span class="text-muted ps-3" style="font-size: 13px;">3 ngày trước</span></span>
+                                    
+                                </h5>
+
+                                <h5 class="card-title mb-2">
+                                    <span class="fa fa-star checkedd"></span>
+                                    <span class="fa fa-star checkedd"></span>
+                                    <span class="fa fa-star checkedd"></span>
+                                    <span class="fa fa-star "></span>
+                                    <span class="fa fa-star " ></span>
+                                    <span style="font-size: 18px;">Chấp nhận được</span>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted pb-2">
+                                    <i class="bi bi-check-circle-fill text-success "
+                                        style="font-style: normal;font-size: 14px;"><span class="ms-1">Sử dụng gói miễn phí</span></i>
+                                </h6>
+                                <p class="card-text">Sản phẩm chất lượng tốt, giao hàng nhanh đóng gói cẩn thận. cuốn sách giúp ta thấu hiểu sự khác biệt giữa phụ niwx và đàn ông, qua đó giảm bớt những hiểu lầm không đáng có trong mối quan hệ hàng ngày</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane container fade" id="menu1">
+            aa
+        </div>
+    </div>
+    <style>
+
+    </style>
+</body>
+
+</html>

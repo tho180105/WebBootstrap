@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <style>
+    body {
+      background-image: none;
+    }
+  </style>
+  <!-- DAnh muc  -->
+  <div id="danhmucmonhoc-move "></div>
+  <div class="container-fluid  mt-5" ng-class="myCssVar">
+    <div class="row text-center  bg-white">
+      <div class="display-4 font-important text-dark" id="loaiHinhThi">{{translation[0].listTitle}}
+        <hr>
+      </div>
+    </div>
+    <style>
+      .card-danhmuc-hover:hover img {
+        /* opacity: 0.3; */
+      }
+
+      .card-danhmuc-hover:hover button {
+        animation: 1s normal hover-danhmuc;
+        display: block;
+        opacity: 1;
+      }
+
+      .card-danhmuc-hover:hover {
+        background-image: url(/images/gradient.gif);
+        background-size: 120%;
+      }
+
+      @keyframes hover-danhmuc {
+        to {
+          opacity: 1;
+        }
+
+        from {
+          opacity: 0;
+        }
+      }
+
+      .card-danhmuc-hover button {
+        display: none;
+      }
+    </style>
+    <div class="container pb-4">
+      <div class="container">
+        <div class="row mt-4 ">
+          
+          <nav aria-label="Page navigation example">
+            <ul class="pagination text-center    mt-3 justify-content-end">
+              <li class="page-item  ">
+                <a class="page-link repeated-item" tabindex="-1" ng-click="previousPageMonHoc()" style="height: 40px;">{{translation[0].btnPrevious}}</a>
+              </li>
+              <li class="page-item " ng-repeat="item in range(0,cacmonhoc.length/6,1) track by $index">
+                <a class="page-link" style="width: 50px;height: 40px;" id="page{{$index+1}}"
+                  ng-click="particularPage($index+1,'page{{$index+1}}')">{{$index+1}}</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" ng-click="nextPageMonHoc()" style="height: 40px;">{{translation[0].btnNext}}</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="card-colums col-sm-5 col-xxl-3 m-4 repeated-item" ng-repeat="item in cacmonhoc  |orderBy:'Name'|limitTo:6:page">
+            <div class="card mt-2 text-center card-danhmuc-hover pt-3" onclick="setTimeout(startClock,100);"
+              style="position: relative;;border-radius: 20px;box-shadow: 0 0 10px rgb(165, 165, 165);">
+              <div class="position-relative">
+                <img src="/images/logos/{{item.Logo}}" class="card-img-top w-75 d-block m-auto mb-3" alt="" />
+                <button class="btn bg-primary border-0 btn-lg text-white position-absolute  thingay-btn"><span><a
+                      ng-click="checkDangNhapDanhMuc(item.Id,item.Name)" style="text-decoration: none;color: white;">{{translation[0].btnNow}}</a></span></button>
+              </div>
+              <div class="card-footer fw-bold bg-primary text-white"
+                style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;">{{item.Name}}</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- End danh muc -->
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="/Js/thitructuyen.js"></script> 
+</head>
+<style>
+  .box {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<body>
+  <div style="height: 25px;" onload="start()"> </div>
+  <div
+    class=" text-center mt-3 bg-white m-auto rounded display-6 font-important d-flex flex-column justify-content-center"
+    style="height: 100px;width: 90%;box-shadow:0 0 5px rgb(196, 195, 195) ;">
+    <span>{{tenMH}}</span>
+  </div>
+
+  <div class="container " style="min-height: 480px;">
+    <div class="row d-flex d-sm-flex flex-sm-column flex-xxl-row justify-content-center align-items-center"
+      id="cauHoiTracNghiemResposive" style="min-height: 400px;">
+      <div class="col-5  p-4 pb-0 position-relative" id="col1TracNghiem">
+        <div class="bg-white w-100 h-100 rounded text-center pt-5 mt-4">
+          <div class="d-flex flex-row justify-content-evenly">
+            <div class="float-left">
+              <div class="box bg-danger text-white">Sai</div>
+              <div class="box bg-success text-white">Đúng</div>
+              <div class="box bg-primary text-white">Đang chọn</div>
+            </div>
+            <div class="float-right">
+              <div class="pt-2">{{translation[0].timeRest}}</div>
+              <div class="display-6 pt-">
+                <div>
+                  <span id="h">Giờ</span> :
+                  <span id="m">Phút</span> :
+                  <span id="s">Giây</span>
+                </div>
+              </div>
+              <div class="pt-3">{{translation[0].ThiMarks}} <code id="diem" class="fs-3">{{diemHienTai}}</code> / <code
+                  class="fs-3" id="tongDiem">{{newCacCauHoi.length}}</code></div>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <button class="btn btn-primary float-right mt-3 w-75 mx-auto" ng-click="nopBai()" id="btnNopBai">Nộp
+              bài</button>
+          </div>
+          <div class="row  w-100 mx-auto mt-3">
+            <nav aria-label="Page navigation example mx-auto">
+              <ul class="pagination   mt-3 justify-content-center">
+                <li ng-click="hienThiCauHoi(0)" class="page-item ">
+                  <a class="page-link "><i class="bi bi-chevron-bar-left fs-5"></i></a>
+                </li>
+                <li class="page-item" ng-click="hienThiCauHoi(cauHienTai-1)"
+                  style="{{(cauHienTai==0)?'pointer-events: none;':''}};">
+                  <a class="page-link  fs-5" tabindex="-1">
+                    <i class="bi bi-chevron-double-left"></i> </a>
+                </li>
+                <li class="page-item  ">
+                  <a class="page-link fs-5" tabindex="-1" ng-if="cauHienTai>2">...</a>
+                </li>
+                <li class="page-item" ng-repeat="n in newCacCauHoi ">
+                  <a ng-click="hienThiCauHoi($index)" ng-if="hienPageCauHoi($index)" class="page-link fs-5 text-center"
+                    style="{{(checkAnswerPage($index)==1)?'color : white ;background-color:rgb(0,183,74) ; ':''}};{{(checkAnswerPage($index)==2)?'color : white ;background-color:rgb(249,49,84) ; ':''}};width: 47px;{{($index==cauHienTai)?'color : white ;background-color:rgb(13,110,253) ; ':''}}">
+                    {{$index+1}}
+                  </a>
+                </li>
+                <li class="page-item  ">
+                  <a class="page-link fs-5 text-center " tabindex="-1" ng-if="cauHienTai<newCacCauHoi.length-3">...</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" ng-click="hienThiCauHoi(cauHienTai+1)"
+                    style="{{(cauHienTai==newCacCauHoi.length-1)?'pointer-events: none;':''}}">
+                    <i class="bi bi-chevron-double-right fs-5"></i>
+                  </a>
+                </li>
+                <li ng-click="hienThiCauHoi(newCacCauHoi.length-1)" class="page-item   ">
+                  <a class="page-link "><i class="bi bi-chevron-bar-right fs-5"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="col-7 mt-4 pb-4" id="col2TracNghiem">
+        <div class="card mt-4 position-relative" ng-repeat="ch in newCacCauHoi |limitTo :1:cauHienTai"
+          style="{{(kiemTraNut(ch.Id))?'pointer-events: none;':''}};">
+          <div class="card-header bg-warning ">{{translation[0].sentence}} {{cauHienTai+1}} : {{ch.Text}} </div>
+          <div class="card-body">
+            <p class="card-text" ng-repeat="pa in ch.Answers ">
+              <input type="radio" name="pa" value="{{pa.Id}}" class="{{ch.Id}}" ng-click="test(ch.Id,pa.Id)"
+                ng-checked="kiemTraNut(pa.Id);check(ch.Id,pa.Id);"> {{pa.Text}}
+            </p>
+          </div>
+          <div class="card-footer text-muted d-flex justify-content-between"  style="min-height: 50px;">
+            <span class="pt-2"> {{translation[0].ThiMarks}}  {{ch.Marks}}</span>
+            <style>
+            
+            </style>
+<!-- style="{{(kiemTraNut(ch.Id))?'':'display:none'}};" -->
+            <div class="fs-5  " id="dalam" > 
+              <span id="dung" style="{{(checkAnswerPage(cauHienTai)==1)?'display:block ; ':'display:none'}};"
+                class=" text-success fs-4">
+                <i class="bi bi-check-circle-fill text-success"></i> Đúng
+              </span>
+              <span id="sai"  style="{{(checkAnswerPage(cauHienTai)==2)?'display:block ; ':'display:none'}};"
+                class=" text-danger fs-4">
+                <i class="bi bi-x-circle-fill text-danger"></i>Sai
+              </span>
+              
+              <!-- {{translation[0].textDone}} -->
+            </div>
+            <span> <button class="btn btn-primary float-right " id="{{ch.Id}}"
+                ng-click="chamDiem($index,ch.Id,ch.Marks)">{{translation[0].btnAnswer}}</button></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal fade bg-dark-50" id="menu">
+        <div class="modal-dialog  h-100">
+          <div class="modal-content " style="height: 100%;">
+    
+            <ul class="nav nav-pills h-75 d-flex flex-column justify-content-between mt-3 align-items-center ">
+              <!-- Bắt dàu Nav cơ bản -->
+              <li class="nav-item  ps-2 pt-2 nav-hover">
+                <a class="nav-link px-5" href="#!trangchu" type="button" data-bs-dismiss="modal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-house mb-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd"
+                      d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                  </svg>
+    
+                  </i><button type="button" class="btn p-0 m-0 " data-bs-dismiss="modal">Trang chủ</button></a>
+              </li>
+              <li class="nav-item nav-hover pt-2 ps-2">
+                <a class="nav-link pt-2 " href="#!gioithieu"><button type="button" class="btn p-0 m-0 px-5"
+                    data-bs-dismiss="modal">Giới thiệu</button></a>
+              </li>
+              <li class="nav-item pt-2 nav-hover px-0">
+                <a class="nav-link  " href="#!lienhe"><button type="button" class="btn p-0 m-0 px-5"
+                    data-bs-dismiss="modal">Liên hệ</button></a>
+              </li>
+              <li class="nav-item pt-2 nav-hover">
+                <a class="nav-link " href="#!gopy"><button type="button" class="btn p-0 m-0 px-5"
+                    data-bs-dismiss="modal"> Góp ý</button></a>
+              </li>
+              <!-- <li class="nav-item pt-2 nav-hover">
+                <a class="nav-link  " href="#"><button type="button" class="btn p-0 m-0 px-5" data-bs-dismiss="modal">Hỏi
+                    đáp</button></a>
+              </li> -->
+              <li class="nav-item dropdown pt-2  nav-hover">
+                <a class="nav-link  " type="button" href="#!danhmuc" ><button type="button"
+                    class="btn p-0 m-0 px-5" data-bs-dismiss="modal" >Vào 
+                    thi</button>
+                  </a>
+              </li>
+              <li class="nav-item dropdown pt-2  nav-hover">
+                <a class="nav-link  " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"><button type="button"
+                    class="btn p-0 m-0 px-5"  data-bs-toggle="offcanvas" data-bs-target="#danhmuc_Tab">Danh
+                    mục</button></a>
+              </li>
+              <!-- End Nav cơ bản  -->
+              <li class="nav-item rounded-pill dropdown ms-3 ">
+                <a class="navbar-brand   nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" href="#">
+                  <img src="images/logo_avatar.png" alt="Avatar Logo" style="width:40px;" class="rounded-circle">
+                  Trương Thọ
+                </a>
+    
+    
+    
+                <!-- Dropdowm Start -->
+                <ul class="dropdown-menu rounded  ">
+                  <li class="d-flex p-3">
+                    <img src="images/logo_avatar.png" width="50px" alt="">
+                    <h5 class="dropdown-header text-break">
+                      <span style="font-weight: bold;font-size: 16px;">Trương Anh Thọ</span>
+                      <div class="pt-2 text-center">
+                        PS18597
+                      </div>
+    
+                    </h5>
+                  </li>
+                  <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal" data-bs-target="#myModal1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-plus mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                        <path
+                          d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        <path fill-rule="evenodd"
+                          d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                      </svg>
+                      Đăng ký</a></li>
+                  <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal" data-bs-target="#dangnhapModal">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-box-arrow-in-right mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                        <path fill-rule="evenodd"
+                          d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                      </svg>
+                      Đăng nhập</a></li>
+                  <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal" data-bs-target="#myModal2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-wrench-adjustable-circle mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                        <path d="M12.496 8a4.491 4.491 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11c.027.2.04.403.04.61Z" />
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1 0a7 7 0 1 0-13.202 3.249l1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.49 4.49 0 0 1-1.592-.29L4.747 14.2A7 7 0 0 0 15 8Zm-8.295.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27.596-.894Z" />
+                      </svg>
+                      Quên mật khẩu</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item rounded" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-box-arrow-in-left mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z" />
+                        <path fill-rule="evenodd"
+                          d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                      </svg>
+                      Đăng xuất</a></li>
+                  <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal" data-bs-target="#doimatkhau">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-key-fill mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                        <path
+                          d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                      </svg>
+                      Đổi mật khẩu</a></li>
+                  <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal" data-bs-target="#doithongtin">
+                      <i class="fas fa-save mb-1 me-2 ms-1 "></i>
+                      Cập nhật tài khoản</a></li>
+                </ul>
+    
+          </div>
+        </div>
+      </div>
+</body>
+</html>

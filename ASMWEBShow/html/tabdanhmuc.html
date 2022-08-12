@@ -1,0 +1,26 @@
+
+  <div class="offcanvas offcanvas-start rounded" id="danhmuc_Tab" > 
+    <div class="offcanvas-header bg-light">
+      <h3 class="offcanvas-title font-important text-center" style="padding-left: 90px;">
+        {{translation[0].tabCanva}}</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <input type="text" id="searchinput" ng-model="searchinput" class="w-100 ps-3 mb-3" placeholder="Tìm kiếm" style="border-radius: 27px; outline: none ;border: none;height: 50px;background-color: rgb(245, 245, 245);">
+      </div>
+      <ul class="list-group list-group-flush ">
+        <li  ng-repeat="item in cacmonhoc | filter:{Name :searchinput} " class=" repeated-item list-group-item d-flex list-group-item-action position-relative " onclick="setTimeout(startClock,100)" data-bs-dismiss="offcanvas" >
+          <a ng-click="checkDangNhapDanhMuc(item.Id,item.Name)"  class="d-flex" style="text-decoration: none;color: rgb(88, 88, 88);">
+            <img src="images/logos/{{item.Logo}}" width="40px" alt="" class="me-3">
+            <span class="pt-2 ">
+              <div class="text-center mx-auto w-100">{{item.Name}}
+                <!-- <span class="badge  ms-1 mb-1 position-absolute end-0" style="background-color: #{{colorRamdom()}};">1</span> -->
+              </div>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+

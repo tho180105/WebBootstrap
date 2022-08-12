@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="icon" href="images/iconWeb.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm sticky-top" style="background-color: white;">
+    <div class="container mt-0">
+      <div class="col-4 h2 logo"><i class="fas fa-circle-question"></i>Thi trực tuyến</div>
+      <div class="col-8  me-0 p-0  d-flex justify-content-end">
+        <ul class="nav nav-pills  ">
+          <li class="nav-item ms-5 ps-2 pt-2 nav-hover">
+            <a class="nav-link " href="#home-move">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-house mb-1" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                <path fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+              </svg>
+
+              </i>Trang chủ</a>
+          </li>
+          <li class="nav-item nav-hover pt-2 " x>
+            <a class="nav-link pt-2 px-2 " href="#About" target="">Giới thiệu</a>
+          </li>
+          <li class="nav-item pt-2 nav-hover px-0">
+            <a class="nav-link px-2 " href="#lienhe-move">Liên hệ</a>
+          </li>
+          <li class="nav-item pt-2 nav-hover">
+            <a class="nav-link px-2" href="#gopy-hoidap">Góp ý</a>
+          </li>
+          <li class="nav-item pt-2 nav-hover">
+            <a class="nav-link px-2 " href="#">Hỏi đáp</a>
+          </li>
+
+          <li class="nav-item dropdown pt-2  nav-hover">
+            <a class="nav-link px-2 " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">Danh mục</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cơ sở dữ liệu
+                </a></li>
+              <li><a class="dropdown-item" href="#">Thiết kế trang Web</a></li>
+              <li><a class="dropdown-item" href="#">Ứng dụng phần mền</a></li>
+            </ul>
+          </li>
+          <!-- <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">Danh mục</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Cơ sở dữ liệu 
+                                     </a></li>
+                                <li><a class="dropdown-item" href="#">Thiết kế trang Web</a></li>
+                                <li><a class="dropdown-item" href="#">Ứng dụng phần mền</a></li>
+                            </ul>
+                        </li> -->
+          <li class="nav-item rounded-pill dropdown ms-3 ">
+            <a class="navbar-brand   nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" href="#">
+              <img src="/images/logo_avatar.png" alt="Avatar Logo" style="width:40px;" class="rounded-circle">
+              Trương Thọ
+            </a>
+            <ul class="dropdown-menu rounded  ">
+              <li class="d-flex p-3">
+                <img src="/images/logo_avatar.png" width="50px" alt="">
+                <h5 class="dropdown-header text-break">
+                  <span style="font-weight: bold;font-size: 16px;">Trương Anh Thọ</span>
+                  <div class="pt-2 text-center">
+                    PS18597
+                  </div>
+
+                </h5>
+              </li>
+              <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal" data-bs-target="#myModal1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-person-plus mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                    <path
+                      d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    <path fill-rule="evenodd"
+                      d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                  </svg>
+                  Đăng ký</a></li>
+              <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal" data-bs-target="#dangnhapModal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-in-right mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                    <path fill-rule="evenodd"
+                      d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                  </svg>
+                  Đăng nhập</a></li>
+              <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal" data-bs-target="#myModal2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-wrench-adjustable-circle mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                    <path d="M12.496 8a4.491 4.491 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11c.027.2.04.403.04.61Z" />
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1 0a7 7 0 1 0-13.202 3.249l1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.49 4.49 0 0 1-1.592-.29L4.747 14.2A7 7 0 0 0 15 8Zm-8.295.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27.596-.894Z" />
+                  </svg>
+                  Quên mật khẩu</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item rounded" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-in-left mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z" />
+                    <path fill-rule="evenodd"
+                      d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                  </svg>
+                  Đăng xuất</a></li>
+              <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal" data-bs-target="#doimatkhau">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-key-fill mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                    <path
+                      d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                  </svg>
+                  Đổi mật khẩu</a></li>
+              <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal" data-bs-target="#doithongtin">
+                  <i class="fas fa-save mb-1 me-2 ms-1 "></i>
+                  Cập nhật tài khoản</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid  " style="height: auto;background-color: rgb(241,241,241)">
+    <div class="container ">
+      <div class="row ">
+        <div class="col-2  bg-white ">
+          <div class="row bg-white" style="height: 55px;">
+            <i class="bi bi-chevron-compact-up text-center" style="font-size: 55px;"></i>
+          </div>
+          <div class="row h-75">
+            <div class="row bg-white ms-1 mt-3" style="height: 150px;width: 96%;">
+              <div class="row ">
+                Câu 11 
+              </div>
+              <div class="row bg-light ms-1 d-flex justify-content-center " style="height: auto;margin-top: -30px;">
+                  <div class="row text-muted" style="font-size: 10px;">Quốc hiệu đầu tiên của nước Việt Nam?</div>
+                  <div class="row w-75 " >
+                    <img src="/images/anh.png"  width="10px" height="50"  alt="">
+                  </div>
+                  <div class="row">
+                    <div class="bg-danger" style="width: 48%;"></div>
+                    <div class="bg-success" style="width: 48%;"></div>
+                    <div class="bg-primary" style="width: 48%;"></div>
+                    <div class="bg-warning" style="width: 48%;"></div>
+                  </div>
+              </div>
+            </div> 
+
+            <div class="row bg-white ms-1 mt-5 pb-1 " style="height: 160px;width: 96%;border-radius: 8px;border: 4px solid #8EB5EF;">
+              <div class="row pb-0 mb-0 ">
+                Câu 12 
+              </div>
+              <div class="row bg-light ms-1  d-flex justify-content-center" style="height: auto;margin-top: -30px;">
+                  <div class="row text-muted" style="font-size: 10px;">Ai là người dẹp loại 12 sứ quân ?</div>
+                  <div class="row " style="width: 140px;">
+                    <img src="/images/dinh-tien-hoang (1).jpg" height="50"  alt="">
+                  </div>
+                  <div class="row">
+                    <div class="bg-danger" style="width: 48%;"></div>
+                    <div class="bg-success" style="width: 48%;"></div>
+                    <div class="bg-primary" style="width: 48%;"></div>
+                    <div class="bg-warning" style="width: 48%;"></div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row bg-white ms-1 mt-5" style="height: 150px;width: 96%;">
+              <div class="row ">
+                Câu 13
+              </div>
+              <div class="row bg-light ms-1 d-flex justify-content-center" style="height: auto;margin-top: -30px;">
+                  <div class="row text-muted" style="font-size: 10px;">Ngô Quyền đóng kinh đô ở đâu?</div>
+                  <div class="row w-75">
+                    <img src="/images/ngo-quyen-va-chien-thang-bach-dang-cung-hinh-anh-v-2.jpeg" height="50"  alt="">
+                  </div>
+                  <div class="row">
+                    <div class="bg-danger" style="width: 48%;"></div>
+                    <div class="bg-success" style="width: 48%;"></div>
+                    <div class="bg-primary" style="width: 48%;"></div>
+                    <div class="bg-warning" style="width: 48%;"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row  " >
+            <i class="bi bi-chevron-compact-down text-center pt-4" style="font-size: 55px;"></i>
+          </div>
+        </div>
+        <div class="col-10 ">
+          <div class="row mt-4">
+            <div
+              class=" text-center bg-white m-auto rounded display-6 font-important d-flex flex-column justify-content-center"
+              style="height: 100px;width: 90%;box-shadow:0 0 5px rgb(196, 195, 195) ;">
+
+              <span>Ai là người dẹp loại 12 sứ quân ? </span>
+            </div>
+          </div>
+          <div class="row " style="height: 400px;">
+            <div class="col-3  d-flex flex-column justify-content-end align-items-center  ms-5">
+              <!-- <span class="h4" style="letter-spacing: 1px;">Câu:12/20 </span> -->
+              <div class="text-muted mb-5 text-center" style="width: 350px;">
+                Thời gian còn lại
+                <div class="rounded-circle bg-white  text-center d-block m-auto text-dark mt-1"
+                  style="height: 50px;width: 50px;line-height: 50px;font-weight: 900;">20 s</div>
+              </div>
+              <div class="text-muted rounded d-flex flex-column w-50 pb-5 mb-3 ms-2 invisible">
+                <span class="mb-2">
+                  Lựa chọn đáp án
+                </span>
+                <select name="" id="" class="rounded py-2 px-2 fw-bold">
+                  <option value="">Chọn 1 đáp án</option>
+                  <option value="">Chọn nhiều đáp án</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-6 mt-4 ">
+              <img src="/images/dinh-tien-hoang (1).jpg" width="110%" alt="" class="mt-1">
+            </div>
+          </div>
+          <div class="row d-flex flex-row justify-content-around px-5" style="height: 190px;">
+            <div class="rounded bg-danger" style="height: 45%;width: 49%;">
+              <i class="bi bi-caret-up-fill text-white ps-2"
+                style="font-size: 30px;line-height: 90px;letter-spacing: 2px;">
+                <span class="ps-3" style="font-size: 25px;">Trần Quốc Tuấn</span></i>
+            </div>
+            <div class="rounded bg-success" style="height: 45%;width: 49%;">
+              <i class="bi bi-square-fill text-white ps-2"
+                style="font-size: 30px;line-height: 90px;letter-spacing: 2px;">
+                <span class="ps-3" style="font-size: 25px;">Đinh Bộ Lĩnh</span> </i>
+            </div>
+            <div class="rounded bg-primary" style="height: 45%;width: 49%;">
+              <i class="bi bi-circle-fill text-white ps-2"
+                style="font-size: 30px;line-height: 90px;letter-spacing: 2px;">
+                <span class="ps-3" style="font-size: 25px;">Trần Quốc Toản</span> </i>
+            </div>
+            <div class="rounded bg-warning" style="height: 45%;width: 49%;">
+              <i class="bi bi-diamond-fill text-white ps-2 "
+                style="font-size: 30px;line-height: 90px;letter-spacing: 2px;">
+                <span class="ps-3" style="font-size: 25px;">Nguyễn Huệ</span> </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

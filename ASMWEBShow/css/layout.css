@@ -1,0 +1,473 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.danhmuc-img-hover:hover{
+  width: 50%;
+}
+
+.title-header r {
+  margin: 0;
+  font-size: 80px;
+  line-height: 72px;
+  color: #124265;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.scrip-header {
+  color: #5e5e5e ;
+  margin: 10px 0 0 0;
+  font-size: 22px;
+}
+.nav-link {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-hover :hover {
+  /* border: 1px gray inset; */
+  background-color: #1266f1;
+  color: white;
+}
+
+.logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: poppins;
+}
+
+#loaiHinhThi hr{
+  height: 2px;
+  margin: 0 auto;
+  width: 0;
+  }
+  #loaiHinhThi:hover hr{
+    animation:  0.3s normal abcc;
+    width:400px
+}
+#loaiHinhThi:not(:hover) hr{
+    animation:  0.3s normal abcd;
+    width: 0px;
+}
+#line{
+    margin: 0 auto;
+}
+@keyframes abcc{
+    0%{width: 0px;}
+    100%{width: 400px;}
+}
+@keyframes abcd{
+    0%{width: 400px;}
+    100%{width: 0;}
+}
+.font-important{
+  font-family: 'Poppins', sans-serif !important;font-weight: 100 !important;
+}
+.dropdown-item {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+@media  screen and (max-width :1800px) {
+  /* .carousel-item .card-body{
+    background-color: #1266f1;
+  } */
+  .carousel-item img{
+    width: 50%;
+  }
+  .thingay-btn{
+    left: 30%;
+    top: 45%;
+  }
+  .gopyborder{
+    border-right: 1px solid rgb(204, 203, 203);
+  }
+  .dangkythanhvien{
+    margin-top: 0;
+  }
+  .card-text-slide h5{
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+  .card-text-slide h6{
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+  .card-text-slide p{
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+  .answer{
+    margin: 0 auto;
+    width: 49%;
+    margin-bottom: 10px;
+    height: 45%;
+  }
+  .haml{
+    visibility: hidden;
+  }
+}
+@media  screen and (max-width :1000px) {
+  .carousel-item .card-body{
+    width: auto;
+    height: 300px;
+  }
+  .carousel-item img{
+    height: 200px;width: 400px;
+  }
+  .card-lienhe{
+    justify-content: space-around;
+    align-items: center;
+  }
+  .coso2{
+    flex-direction: column-reverse;
+  }
+  .gopyborder{
+    border-right: none;
+  }
+}
+@media  screen and (max-width :550px) {
+  #cauHoiTracNghiemResposive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #col1TracNghiem{
+    width: 100%;
+  }
+  #col2TracNghiem{
+    width: 100%;
+  }
+  .card-home-hover{
+    margin-bottom: 30px;
+  }
+  .nav-fullscreen{
+    display: none;
+  }
+  .thitructuyen_name{
+    width: auto;
+  }
+  .card-nangcao{
+    margin-bottom: 50px;
+  }
+  .thingay-btn{
+    left: 37%;
+    top: 45%;
+  }
+  .card-lienhe{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+  }
+  .card-lienhe2{
+    flex-direction: column-reverse;
+  }
+  .coso2{
+    background-color: #1266f1;
+    flex-direction: column-reverse;
+  }
+  .tab-content{
+    margin: 0 auto;
+  }
+  .dangkythanhvien{
+    margin-top: 40px;
+  }
+  .tab-pane{
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+  .gopyborder{
+    border-right: none;
+  }
+  .card-text-slide h5{
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .card-text-slide h6{
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .card-text-slide p{
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .img-slide{
+    padding-right: 65px;
+  }
+  .card-home-hover{
+    margin-left: 40px;
+  }
+
+  /* Trắc nghiệm */
+  .listcauhoi{
+    display: none;
+  }
+  .btn-next-tracnghiem{
+    display: none;
+  }
+  .time-rest{
+    display: none;
+  }
+  .content-question{
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+  .answer{
+    width: 100%;
+    height: 45%;
+    margin-bottom: 10px;
+
+  }
+  .group-time-select{
+    display: none;
+  }
+  .haml{
+    display:none;
+  }
+}
+@font-face {
+  font-family: poppins;
+  src: url(/font/UTM\ Americana_1.ttf);
+}
+
+body {
+  background-image: url(/images/gif1.gif);
+  background-position: center;
+  background-size: cover;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Open Sans", sans-serif;overflow-y: scroll;
+}
+.card-home-hover .card-body div {
+  color: #124265;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.card-home-hover:hover {
+  background-color: rgb(248, 248, 248);
+  color: rgb(250, 74, 74);
+}
+#nhapmaxacnhan-header {
+  display: none;
+}
+
+#nhapmaxacnhan-body {
+  display: none;
+}
+
+#nhapmaxacnhan-btn1 {
+  display: none;
+}
+
+#nhapmaxacnhan-btn2 {
+  display: none;
+}
+
+#xacnhanmk {
+  height: auto;
+}
+/* #page1{
+  background-color :rgb(13,110,253);
+  color :white;
+} */
+
+
+.nav-link {
+  color: #444444;
+  /* color: #ffffff; */
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-hover :hover {
+  /* border: 1px gray inset; */
+  background-color: #1266F1;
+  color: white;
+}
+
+.logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: poppins;
+}
+
+.dropdown-item {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(/font/UTM\ Americana_1.ttf);
+}
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+}
+
+.offcanvas-body li:hover{
+  background-image: url(/images/gradient.gif);
+}
+.offcanvas-body li:hover div{
+ color: aliceblue;
+}
+
+@keyframes btn-out {
+  from {
+      transform: translateY(100%);
+      transform: rotate(360deg) skewX(10deg);
+      opacity: 0;
+      background-color: rebeccapurple;
+  }
+
+  to {
+      transform: rotate(0deg) skewX(0);
+      opacity: 1;
+  }
+}
+@keyframes btn-in {
+  from {
+      transform: translateY(100%);
+      transform: rotate(360deg) skewX(10deg);
+      opacity: 0;
+      background-color: rebeccapurple;
+  }
+
+  to {
+      transform: rotate(0deg) skewX(0);
+      opacity: 1;
+  }
+}
+@keyframes showThongBao {
+  from {
+      transform: translateY(-100%);
+      /* transform: rotate(360deg) skewX(10deg); */
+      opacity: 0;
+      background-color: rebeccapurple;
+  }
+
+  to {
+      /* transform: rotate(0deg) skewX(0); */
+      opacity: 1;
+  }
+}
+@keyframes hideThongBao {
+  from {
+      /* transform: rotate(360deg) skewX(10deg); */
+      opacity: 1;
+      background-color: rebeccapurple;
+  }
+
+  to {
+    transform: translateY(100%);
+    /* transform: rotate(0deg) skewX(0); */
+      opacity: 0;
+  }
+}
+
+
+/* .animate-fade-add.animate-fade-add-active {
+  transition: all 1s linear;
+  opacity: 0;
+} */
+
+
+
+
+/*
+  We are using CSS transitions for when the enter and move events
+  are triggered for the element that has the `repeated-item` class
+*/
+.repeated-item.ng-enter, .repeated-item.ng-move {
+  transition: all 0.5s linear;
+  animation: 0.5s my_animationIn;
+  opacity: 0;
+}
+
+/*
+  `.ng-enter-active` and `.ng-move-active` are where the transition destination
+  properties are set so that the animation knows what to animate
+*/
+.repeated-item.ng-enter.ng-enter-active,
+.repeated-item.ng-move.ng-move-active {
+  opacity: 1;
+}
+
+/*
+  We are using CSS keyframe animations for when the `leave` event
+  is triggered for the element that has the `repeated-item` class
+*/
+.repeated-item.ng-leave {
+  animation: 0.5s my_animation;
+}
+.repeated-item.ng-move.ng-move-active {
+  animation: 0.5s my_animationIn;
+}
+.css-class-add, .css-class-remove {
+  transition: all 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.css-class,
+.css-class-add.css-class-add-active {
+  animation: 0.2s my_animationIn;
+}
+
+/* .css-class-remove.css-class-remove-active {
+  animation: 0.5s my_animationIn;
+} */
+
+
+
+
+@keyframes slide_nav {
+  from { opacity: 0.8; transform:  translateX(-2%)}
+  to   { opacity: 1;   }
+}
+
+
+
+@keyframes my_animation {
+  from { opacity: 1;  transform: translateX(0%)  }
+  to   { opacity: 0;  transform: translateX(100%) ;}
+}
+
+@keyframes my_animationIn {
+  from { opacity: 0;  transform: translateX(100%);}
+  to   { opacity: 1;  transform: translateX(0%);}
+}
+
+
+
+
+
+
+
+
+

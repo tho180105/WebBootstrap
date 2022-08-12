@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body> 
+  <div class="container-fluid mt-5" ng-class="myCssVar">
+    <div class="row pt-3 text-center pb-5 bg-white">
+      <div class="display-4 font-important text-dark" id="loaiHinhThi">{{translation[0].feedbackTitle}}
+        <hr>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <ul class="nav nav-pills bg-light" style="height: 50px;">
+          <li class="nav-item   " style="width: 200px;">
+            <a class="nav-link active  " data-bs-toggle="pill" href="#home"><span
+                style="font-size: 25px; text-align: center;"> {{translation[0].feedback}}</span></a>
+          </li>
+
+          <!-- <li class="nav-item" style="width: 200px;">
+            <a class="nav-link" data-bs-toggle="pill" href="#menu1"><span style="font-size: 25px; text-align: center;">
+                Hỏi đáp</span></a>
+          </li> -->
+        </ul>
+        <style>
+
+        </style>
+        <!-- Tab panes -->
+        <div class="tab-content bg-white p-xxl-3 p-sm-0 rounded container">
+          <div class="tab-pane container active h-100 rounded  p-sm-0 m-sm-0" id="home">
+            <div class="row  h-100 w-100 rounded d-flex flex-sm-column  flex-xxl-row">
+              <div class="col-xxl-8 col-sm-12 pe-xxl-3  gopyborder">
+                <div class="row pb-3" style="border-bottom: 1px solid rgb(204, 203, 203);">
+                  <div class="col-5">
+                    <img src="images/sentleter.jpg" alt="" width="100%" class="d-block mt-5 pt-5"
+                      style="margin-left: 0px;">
+                  </div>
+                  <div class="col">
+                    <div class="row font-important display-6  py-4" style="text-align: center;margin-left: 35%;">{{translation[0].feedback}}
+                    </div>
+                    <div class="row mb-3">
+                      <label for="">
+                        <i class="bi bi-envelope me-4" style="font-size: 30px;"></i>
+                        <input type="text" placeholder=" Email" class="bg-light ps-xxl-4 ps-sm-0"
+                          style="border-radius: 27px; outline: none ;border: none;width: 330px;height: 40px;background-color: rgb(245, 245, 245);">
+                      </label>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="">
+                        <i class="bi bi-calendar  me-4 " style="font-size: 30px;"></i>
+                        <input type="text" placeholder=" {{translation[0].placeholderOverall}}" class="bg-light ps-4 "
+                          style="border-radius: 27px; outline: none ;border: none;width: 330px;height: 40px;background-color: rgb(245, 245, 245);">
+                      </label>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="">
+                        <div class="text-muted mt-3 mb-3 h6">{{translation[0].feedback}}</div>
+                        <textarea name="" id="" cols="30" rows="7" class="form-control bg-light"></textarea>
+                      </label>
+                    </div>
+
+                    <button class="btn btn-primary mt-4 mb-1" type="button"
+                      style="width: 130px;margin-left: 100px;border-radius: 25px;" onclick="openXacnhanmk()">{{translation[0].feedback}}</button>
+                  </div>
+                </div>
+                <style>
+                  .checkedd {
+                    color: #FFA900;
+                  }
+
+                  .card-text>.fa-star {
+                    margin-top: 15px;
+                    font-size: 30px;
+                    margin-left: 15px;
+                  }
+                </style>
+                <div class="row   mt-2" style="height: auto">
+                  <div class="col-xxl-4 col-sm-12  ms-sm-1 ms-xxl-0 mb-sm-2 pe-sm-1">
+                    <div class="card ">
+                      <div class="card-body">
+                        <h5 class="card-title h3 font-important pb-4 text-muted">{{translation[0].feedbackUser}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">34 {{translation[0].feedbackRate}}</h6>
+                        <p class="card-text">
+                          <span class="fa fa-star checkedd"></span>
+                          <span class="fa fa-star checkedd"></span>
+                          <span class="fa fa-star checkedd"></span>
+                          <span class="fa fa-star checkedd"></span>
+                          <span class="fa fa-star"></span>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-xxl-8 col-sm-12 ">
+                    <div class="row ms-sm-1 ">
+                      <div class="card ">
+                        <div class="card-body">
+                          <div class="card-text d-flex flex-column justify-content-around" style="height: 170px;">
+                            <div class="d-flex">
+                              <span class="fw-bold " style="font-size: 20px;margin-top: -5px;">5</span>
+                              <span class="fa fa-star ps-2 pe-3 text-muted" style="font-size: 20px;"></span>
+                              <div class="progress ms-2" style="height: 15px;border-radius: 20px;width: 400px;">
+                                <div class="progress-bar bg-success"
+                                  style="width:80%; height: 15px;border-radius: 10px;"></div>
+                              </div>
+                              <span class="ps-4" style="font-size: 19px;margin-top: -7px;"> 9</span>
+                            </div>
+                            <div class="d-flex">
+                              <span class="fw-bold  pb-0" style="font-size: 20px;;margin-top: -5px;">4</span>
+                              <span class="fa fa-star ps-2 pe-3 text-muted" style="font-size: 20px;"></span>
+                              <div class="progress ms-2" style="height: 15px;border-radius: 20px;width: 400px;">
+                                <div class="progress-bar bg-primary"
+                                  style="width:60%; height: 15px;border-radius: 10px;"></div>
+                              </div>
+                              <span class="ps-4 " style="font-size: 19px;margin-top: -7px;"> 8</span>
+                            </div>
+                            <div class="d-flex">
+                              <span class="fw-bold  pb-0" style="font-size: 20px;;margin-top: -5px;">3</span>
+                              <span class="fa fa-star ps-2 pe-3 text-muted" style="font-size: 20px;"></span>
+                              <div class="progress ms-2" style="height: 15px;border-radius: 20px;width: 400px;">
+                                <div class="progress-bar bg-info" style="width:40%; height: 15px;border-radius: 10px;">
+                                </div>
+                              </div>
+                              <span class="ps-4" style="font-size: 19px ;margin-top: -7px;"> 6</span>
+                            </div>
+                            <div class="d-flex">
+                              <span class="fw-bold  pb-0" style="font-size: 20px;;margin-top: -5px;">2</span>
+                              <span class="fa fa-star ps-2 pe-3 text-muted" style="font-size: 20px;"></span>
+                              <div class="progress ms-2" style="height: 15px;border-radius: 20px;width: 400px;">
+                                <div class="progress-bar bg-warning"
+                                  style="width:20%; height: 15px;border-radius: 10px;"></div>
+                              </div>
+                              <span class="ps-4 " style="font-size: 19px;margin-top: -7px;"> 3</span>
+                            </div>
+                            <div class="d-flex">
+                              <span class="fw-bold  pb-2" style="font-size: 20px;;margin-top: -5px;">1</span>
+                              <span class="fa fa-star ps-2 pe-3 text-muted" style="font-size: 20px;"></span>
+                              <div class="progress ms-2" style="height: 15px;border-radius: 20px;width: 400px;">
+                                <div class="progress-bar bg-danger"
+                                  style="width:10%; height: 15px;border-radius: 10px;"></div>
+                              </div>
+                              <span class="ps-4 " style="font-size: 19px;margin-top: -7px;"> 2</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-sm-12 pt-sm-3">
+                <div class="row mb-4">
+                  <div class="card ms-3 border-0" style="width: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title text-muted" style="font-size: 30px;font-weight: 00;">{{translation[0].commentUserTitle}}
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted">13 {{translation[0].commentUser}}</h6>
+                      <p class="card-text">{{translation[0].subCommentUser}}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="card ms-3 border-0" style="width: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title pb-2" style="border-bottom: 1px gray dotted;">
+                        <span>Trương Nhựt Thiên <span class="text-muted ps-3" style="font-size: 13px;">2 {{translation[0].lastDay}}</span></span>
+
+                      </h5>
+
+                      <h5 class="card-title mb-2">
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span style="font-size: 16px;font-weight: 600;">{{translation[0].chooseRateGood}}</span>
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted pb-2">
+                        <i class="bi bi-check-circle-fill text-success "
+                          style="font-style: normal;font-size: 14px;"><span class="ms-1">{{translation[0].chooseRateGood}}</span></i>
+                      </h6>
+                      <p class="card-text">Giao hàng nhanh. Sách có bọc nilong bên ngoài. Nội dung sách phân
+                        tích về sự khác biệt trong cách lập luận và nhận xét vấn đề của hai giới trong một
+                        mối quan hệ. Có những câu chuyện tưởng chừng như không lớn nhưng cũng đủ để làm rạn
+                        nứt tình cảm giữa đôi bên</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="card ms-3 border-0" style="width: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title pb-2" style="border-bottom: 1px gray dotted;">
+                        <span>Trương Anh Thọ <span class="text-muted ps-3" style="font-size: 13px;">3 {{translation[0].lastDay}}</span></span>
+
+                      </h5>
+
+                      <h5 class="card-title mb-2">
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span style="font-size: 16px;font-weight: 600;">{{translation[0].chooseRateMedium}}</span>
+                      </h5>
+                      <h6 class="card-subtitle mb-2 text-muted pb-2">
+                        <i class="bi bi-check-circle-fill text-success "
+                          style="font-style: normal;font-size: 14px;"><span class="ms-1">{{translation[0].serviceUseFree}}</span></i>
+                      </h6>
+                      <p class="card-text">Sản phẩm chất lượng tốt, giao hàng nhanh đóng gói cẩn thận. cuốn sách giúp ta
+                        thấu hiểu sự khác biệt giữa phụ nữa và đàn ông, qua đó giảm bớt những hiểu lầm không đáng có
+                        trong mối quan hệ hàng ngày</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pb-4">
+                  <button class="btn btn-primary mx-auto" type="button" style="width: 230px;border-radius: 25px;"
+                    onclick="openXacnhanmk()">{{translation[0].btnSeeMoreComment}}</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu1">
+            <div class="row">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

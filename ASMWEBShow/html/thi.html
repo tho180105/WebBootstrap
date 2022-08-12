@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thi trực tuyến</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="icon" href="/images/iconWeb.png">
+
+</head>
+
+<body  class="bg-light">
+    <nav class="navbar navbar-expand-sm sticky-top bg-white " style="background-color: white;">
+        <div class="container mt-0">
+            <div class="col-4 h2 logo"><i class="fas fa-circle-question"></i>Thi trực tuyến</div>
+            <div class="col-8  me-0 p-0  d-flex justify-content-end">
+                <ul class="nav nav-pills  ">
+                    <li class="nav-item ms-5 ps-2 pt-2 nav-hover">
+                        <a class="nav-link " href="#home-move">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-house mb-1" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                            </svg>
+
+                            </i>Trang chủ</a>
+                    </li>
+                    <li class="nav-item nav-hover pt-2 " x>
+                        <a class="nav-link pt-2 px-2 " href="#About" target="">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item pt-2 nav-hover px-0">
+                        <a class="nav-link px-2 " href="#lienhe-move">Liên hệ</a>
+                    </li>
+                    <li class="nav-item pt-2 nav-hover">
+                        <a class="nav-link px-2" href="#">Góp ý</a>
+                    </li>
+                    <li class="nav-item pt-2 nav-hover">
+                        <a class="nav-link px-2 " href="#">Hỏi đáp</a>
+                    </li>
+
+                    <li class="nav-item dropdown pt-2  nav-hover">
+                        <a class="nav-link px-2 " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">Danh
+                            mục</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cơ sở dữ liệu
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">Thiết kế trang Web</a></li>
+                            <li><a class="dropdown-item" href="#">Ứng dụng phần mền</a></li>
+                        </ul>
+                    </li>
+                    <!-- <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">Danh mục</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Cơ sở dữ liệu 
+                                     </a></li>
+                                <li><a class="dropdown-item" href="#">Thiết kế trang Web</a></li>
+                                <li><a class="dropdown-item" href="#">Ứng dụng phần mền</a></li>
+                            </ul>
+                        </li> -->
+                    <li class="nav-item rounded-pill dropdown ms-3 ">
+                        <a class="navbar-brand   nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" href="#">
+                            <img src="/images/logo_avatar.png" alt="Avatar Logo" style="width:40px;"
+                                class="rounded-circle">
+                            Trương Thọ
+                        </a>
+                        <ul class="dropdown-menu rounded  ">
+                            <li class="d-flex p-3">
+                                <img src="/images/logo_avatar.png" width="50px" alt="">
+                                <h5 class="dropdown-header text-break">
+                                    <span style="font-weight: bold;font-size: 16px;">Trương Anh Thọ</span>
+                                    <div class="pt-2 text-center">
+                                        PS18597
+                                    </div>
+
+                                </h5>
+                            </li>
+                            <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#myModal1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-plus mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                        <path fill-rule="evenodd"
+                                            d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                    Đăng ký</a></li>
+                            <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#myModal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-in-right mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                        <path fill-rule="evenodd"
+                                            d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                    </svg>
+                                    Đăng nhập</a></li>
+                            <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#myModal2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-wrench-adjustable-circle mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.496 8a4.491 4.491 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11c.027.2.04.403.04.61Z" />
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1 0a7 7 0 1 0-13.202 3.249l1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.49 4.49 0 0 1-1.592-.29L4.747 14.2A7 7 0 0 0 15 8Zm-8.295.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27.596-.894Z" />
+                                    </svg>
+                                    Quên mật khẩu</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item rounded" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-in-left mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z" />
+                                        <path fill-rule="evenodd"
+                                            d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                                    </svg>
+                                    Đăng xuất</a></li>
+                            <li><a class="dropdown-item rounded" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#doimatkhau">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-key-fill mb-1 me-2 ms-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                    </svg>
+                                    Đổi mật khẩu</a></li>
+                            <li><a class="dropdown-item rounded" href="#">
+                                    <i class="fas fa-save mb-1 me-2 ms-1 "></i>
+                                    Cập nhật tài khoản</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        body {
+            background-image: none;
+        }
+    </style>
+    <div class="container-fluid mt-5 ">
+        <div class="container">
+            <div class="row bg-white pt-3 rounded mb-3 p-3" style="height: 150px;border: 1px gray solid;">
+                <div class="display-6">LINGO22_Cơ Sở lập trình (3+0)_Trương Anh Thọ_HK2.CQ.04</div>
+                &nbsp Trang chủ / Các khoá học của tôi / CSLT.HK2.CQ.04.NHVC.HK2_2021 / KIỂM TRA V HỌC PHẦN / Kiểm tra giữa kỳ
+            </div>
+            <div class="row rounded" style="height: 800px;border: 1px solid gray;">
+                <div class="col-xxl-9 h-100">
+                    <div class="row h-100">
+                        <div class="col-3  mt-3">
+                            <div class="card" style="width: 14rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Câu hỏi <b>3</b></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Trắc nghiệm</h6>
+                                    <p class="card-text">Số điểm : <b>1</b></p>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 14rem;">
+                                <div class="card-body d-flex justify-content-around text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                                      </svg>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                                      </svg>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-9 ">
+                            <div class="card mt-3  " style="width: 100%;background-color:#E7F3F5;height: 95%;">
+                                <div class="row p-3 pt-1" style="height: 350px;">
+                                    <div class="card-body">
+                                        <p class="card-text"> Viết chương trình đếm và trả về màn hình số lượng số
+                                            nguyên tố trong khoảng [a,b) với a, b là
+                                            hai số nguyên dương nhập từ bàn phím và a,b < 10000. <br>
+                                                <b>Định nghĩa:</b>
+                                                <br>
+                                                - Số nguyên tố là các số tự nhiên lớn hơn 1 và là những số chỉ có đúng
+                                                hai ước số là 1 và
+                                                chính nó (chỉ chia hết cho 1 và chính nó)
+                                                Input
+                                                <br>
+                                                - Dòng 1: Số nguyên a,b lần lượt theo đúng thứ tự. a,b < 10000. Hai số
+                                                    a,b cách nhau khoảng trắng. <br>
+                                                    <b>Output</b>
+                                                    <br>
+                                                    - Dòng 1: Số lượng số nguyên tố trong khoảng [a,b).
+                                                    <br>
+                                                    Ví dụ:
+                                                    <br>
+                                                    - Với a = 1, b = 10 số lượng các số nguyên tő trong khảng [1,10] là
+                                                    4 (là các số (2,3,5,7), chương
+                                                    trình trả về 4
+                                                    Input Output
+                                                    1 10 4</p>
+                                                    <b>Answer :</b>
+                                    </div>
+                                </div>
+                                <div class="row " >
+                                    <div class="col-10  m-auto  " style="height: 350px;width: 80%;background-color:#F0F0F0 ;border: 1px solid gray;" >
+                                        <div  class="bg-light mt-4 ms-4"  style="height: 93%;width: 98%;border-top: 1px solid gray;border-left: 1px solid gray;">
+                                            <textarea name="" id="" cols="30" rows="10" style="width: 100%;height: 100%;border: none;"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xxl-3 bg-light h-100">
+                    <div class="card mt-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title h4">Danh sách Câu hỏi</h5>
+                            <p3 class="card-text d-flex  flex-wrap justify-content-center">
+                                <button
+                                    style="width: 50px;height: 50px;outline: none;margin: 6px;background-color: rgb(147, 253, 144);border-radius: 8px;border: 1px solid gray;">1</button>
+                                <button
+                                    style="width: 50px;height: 50px;outline: none;margin: 6px;background-color:  rgb(147, 253, 144);border-radius: 8px;border: 1px solid gray;">2</button>
+                                <button
+                                    style="width: 50px;height: 50px;outline: none;margin: 6px;background-color: white;border-radius: 8px;border: 1px solid gray;">3</button>
+                                <button
+                                    style="width: 50px;height: 50px;outline: none;margin: 6px;background-color: white;border-radius: 8px;border: 1px solid gray;">4</button>
+                                <button
+                                    style="width: 50px;height: 50px;outline: none;margin: 6px;background-color: white;border-radius: 8px;border: 1px solid gray;">5</button>
+                                <button
+                                    style="width: 50px;height: 50px;outline: none;margin: 6px;background-color: white;border-radius: 8px;border: 1px solid gray;">6</button>
+                                <button
+                                    style="width: 50px;height: 50px;outline: none;margin: 6px;background-color: white;border-radius: 8px;border: 1px solid gray;">7</button>
+                                <button
+                                    style="width: 50px;height: 50px;outline: none;margin: 6px;background-color: white;border-radius: 8px;border: 1px solid gray;">8</button>
+                                <button
+                                    style="width: 50px;height: 50px;outline: none;margin: 6px;background-color: white;border-radius: 8px;border: 1px solid gray;">9</button>
+                                <button
+                                    style="width: 50px;height: 50px;outline: none;margin: 6px;background-color: white;border-radius: 8px;border: 1px solid gray;">10</button>
+                            </p3>
+                            <a href="#" class="card-link" style="text-decoration: none;">Kết thúc bài làm ...</a>
+                            <p class="card-text">Thời gian còn lại <b>1:12:34</b> </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-5">
+        <div class="container-fluid pt-5 bg-white" style="height: auto;">
+          <div class="container">
+            <div class="row">
+              <div class="col-5  display-6 text-center" >
+                <span class="font-important  " style="line-height: 60px;">Thi trực tuyến Website</span>
+                <p class="m-auto text-center text-dark " style="font-size: medium;line-height: 40px;">391A Đ. Nam Kỳ Khởi Nghĩa, Phường 14, Quận 3, Thành phố Hồ Chí Minh 700000
+                  Liên hệ : 0337376008
+                </p>
+              </div>
+    
+              <div class="col-6 ms-5 d-inline" style="height: 100px;font-size: large;">
+                <div class="pb-3 fw-bold h3" >Đăng ký thành viên </div>
+                <div class="pb-4 text-muted" style="font-size: 14px;">Để cập nhật và biết những thông tin mới nhất về các đề thi mà bạn ưu thích. </div>
+                <div class="input-group  ">
+                  <input type="text" class="form-control " id="thuong" placeholder="Email">
+                  <span class="input-group-text bg-primary text-light">Đăng ký</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row  mt-5" style="background-color: rgb(231, 231, 231);">
+            <p class="m-auto text-center text-dark ">FPT Polytechnic &copy; 2017. All rights reserved.</p>
+         </div>
+        </div>
+      </footer>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container mx-auto mt-5 rounded">
+    <div class="row d-flex flex-column  ">
+      <div class="col-6 pt-4 mx-auto  bg-white rounded">
+        <div class="display-6 mb-4 text-center"
+          style=" font-family: 'Poppins', sans-serif !important;font-weight: 100 !important;font-size: 30px;">
+          Quên mật khẩu
+        </div>
+      </div>
+
+      <form class="col-6 mb-3 mx-auto  bg-white rounded" name="quenmkform">
+        <label for="" class="mx-auto ms-5 mb-3">
+          <i class="bi bi-person-fill me-4" style="font-size: 30px;"></i>
+          <input type="text" minlength="4" placeholder=" Tài khoản" required name="nameinput" class="bg-light ps-4" ng-model="username"
+            style="border-radius: 27px; outline: none ;border: none;width: 430px;height: 50px;background-color: rgb(245, 245, 245);">
+        </label>   <style>
+          .ng-hide{
+                     visibility: hidden;
+                   }
+        
+       </style>
+        <code class=" pb-2" ng-show="quenmkform.nameinput.$invalid "
+            style="padding-left: 90px;display: block !important;"><i class="bi bi-exclamation-triangle-fill text-danger pe-2"></i>Vui lòng nhập tài khoản</code>
+        <label for="" class="mx-auto ms-5 mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+            class="bi bi-envelope-fill me-4" viewBox="0 0 16 16">
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+          </svg>
+          <input type="email" placeholder="  Email" required name="emailinnput" class="bg-light ps-4" ng-model="email"
+            style="border-radius: 27px; outline: none ;border: none;width: 430px;height: 50px;background-color: rgb(245, 245, 245);">
+        </label>
+        <code class=" pb-1" ng-show="quenmkform.emailinnput.$invalid "
+            style="padding-left: 90px;display: block !important;"><i class="bi bi-exclamation-triangle-fill text-danger pe-2"></i>Vui lòng nhập đúng email</code>
+        <button class="btn btn-primary mt-4 mb-5" type="button"
+          style="width: 130px;margin-left: 100px;border-radius: 25px;" ng-click="getPass()" ng-disabled="quenmkform.$invalid " >Xác nhận</button>
+        <button type="submit" class="btn  mt-4 mb-5"><span class=" ms-5 pt-5" style="outline: none ;border: none;">Trở
+            về <a  onclick="clickDangNhap()" class="text-primary">Đăng nhập</a></span></button>
+      </form>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

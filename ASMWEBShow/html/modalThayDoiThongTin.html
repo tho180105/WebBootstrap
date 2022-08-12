@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body >
+  <div class="container mx-auto bg-white mt-5 rounded">
+        <div class="row pb-4" id="body-article">
+          <div class="col-6 " style="padding-left:150px ;">
+            <form class="p-3 pt-4 pb-0 container  h-100 w-100" name="updateform">
+              <div class="row pt-4">
+                <div class="display-6 mb-5 text-center font-important">{{translation[0].updateAccountTitle}}</div>
+              </div>
+              <div class="row mb-4">
+                <label for="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-person-fill me-4  " viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                  </svg>
+                  <input type="text" required readonly placeholder="{{translation[0].user}}" value="{{hocSinhMoi.username}}"  ng-model="hocSinhMoi.username" class="bg-light ps-4 mb-2"
+                    style="border-radius: 27px; outline: none ;border: none;width: 390px;height: 50px;background-color: rgb(245, 245, 245);">
+                </label>
+              </div>
+              <style>
+                .ng-hide{
+                           visibility: hidden;
+                         }
+              
+               
+             </style>
+              <div class="row mb-1">
+                <label for="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-chat-left-text-fill me-4" viewBox="0 0 16 16">
+                    <path
+                      d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                  </svg>
+                  <input type="text" required placeholder="{{translation[0].name}}" name="nameinput" value="{{hocSinhMoi.fullname}}" ng-model="hocSinhMoi.fullname" class="bg-light ps-4 mb-2"
+                    style="border-radius: 27px; outline: none ;border: none;width: 390px;height: 50px;background-color: rgb(245, 245, 245);">
+                </label>
+                <code class=" pt-1" ng-show="updateform.nameinput.$invalid "
+            style="padding-left: 90px;display: block !important;"><i class="bi bi-exclamation-triangle-fill text-danger pe-1"></i>Vui lòng nhập Họ và tên</code>
+              </div>
+
+              <div class="row mb-1">
+                <label for="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-envelope-fill me-4" viewBox="0 0 16 16">
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                  </svg>
+                  <input type="email" required placeholder=" Email" value="{{hocSinhMoi.email}}" name="emailinput" ng-model="hocSinhMoi.email" class="bg-light ps-4 mb-2"
+                    style="border-radius: 27px; outline: none ;border: none;width: 390px;height: 50px;background-color: rgb(245, 245, 245);">
+                </label>
+                <code class=" pt-1" ng-show="updateform.emailinput.$invalid "
+            style="padding-left: 90px;display: block !important;"><i class="bi bi-exclamation-triangle-fill text-danger pe-1"></i>Vui lòng nhập đúng email</code>
+              </div>
+
+              <div class="row mb-3">
+                <label for="">
+                  <img src="images/birthday_30px.png" class="me-3" alt="">
+                  <input required type="date"  value="{{hocSinhMoi.birthday}}" name="sinhnhatinput" ng-model="hocSinhMoi.birthday" class="bg-light ps-4 mb-2 me-4"
+                    style="border-radius: 27px; outline: none ;border: none;width: 390px;height: 50px;background-color: rgb(245, 245, 245);">
+                </label>
+                <code class=" pt-1" ng-show="updateform.sinhnhatinput.$invalid "
+                style="padding-left: 90px;display: block !important;"><i class="bi bi-exclamation-triangle-fill text-danger pe-1"></i>Vui lòng nhập đúng ngày sinh</code>
+              </div>
+
+              <div class="row mb-3">
+                <div class="ms-3">
+                  <input type="radio" class="form-check-input ms-5" id="radio1" required name="optradio"  value="true" ng-checked="hocSinhMoi.gender">
+                  <label class="form-check-label me-3" for="radio1">{{translation[0].male}}</label>
+                  <input type="radio" class="form-check-input ms-1" id="radio2" required name="optradio"  value="false" ng-checked="!hocSinhMoi.gender">
+                  <label class="form-check-label" for="radio2">{{translation[0].female}}</label>
+                 
+                </div>
+              </div>
+
+
+
+              <div class="ms-0 ps-0  d-flex flex-row">
+                <button type="button" class="btn btn-primary mt-4  "
+                style="margin-left:19px ; width: 180px;border-radius: 27px;" ng-disabled="updateform.$invalid || !updateform.$dirty" ng-click="thayDoiThongTin()">{{translation[0].updatechangeAccount}}</button>
+                <button type="button" class="btn btn-primary mt-4  "
+                style="margin-left:60px ; width: 180px;border-radius: 27px;" ng-disabled=" !updateform.$dirty" ng-click="hoanTac()">{{translation[0].btnUndo}} </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-5">
+            <img src="images/combine.png" alt="" width="350" class="pt-5 mt-5" style="margin-left: 100px;" >
+          </div>
+        </div>
+      </div>
+
+
+</body>
+
+</html>
